@@ -1,48 +1,47 @@
 function dessinePendu(etape)
 {
-	var canvas  = document.querySelector('#canvas');
-	var context = canvas.getContext('2d');
+	switch (etape) {
+	  case 1:
+		  var canvas  = document.querySelector('#canvas');
+			var context = canvas.getContext('2d');
 
-// pied potence
-context.beginPath();
-context.lineWidth='3';
-context.moveTo(5,380);
-context.lineTo(105,380);
-context.stroke(); 
-}
-function dessinePendu2()
-{
+		// pied potence
+		context.beginPath();
+		context.lineWidth='3';
+		context.moveTo(5,380);
+		context.lineTo(105,380);
+		context.stroke(); 
+	  break;
+	  case 2:
+	
+
  // poteau potence
 context.beginPath();
 
 context.moveTo(55,380);
 context.lineTo(55,10);
 context.stroke(); 
-}
-function dessinePendu3()
-{
+break;
+	  case 3:
 // poteau horizontale potence
 context.beginPath();
 context.moveTo(55,10);
 context.lineTo(180,20);
 context.stroke(); 
-}
-function dessinePendu4()
-{
+break;
+	  case 4:
 // corde
 context.lineTo(180,51);
 context.stroke(); 
-}
-function dessinePendu5()
-{
+break;
+	  case 5:
 // corps
 context.beginPath();
 context.moveTo(180,150);
 context.lineTo(180,300);
 context.stroke(); 
-}
-function dessinePendu6()
-{
+break;
+	  case 6:
 
 context.beginPath(); // Le cercle extérieur
 context.arc(178, 100, 50, 0, Math.PI * 2); // Ici le calcul est simplifié
@@ -72,36 +71,34 @@ context.stroke();
 
 
 
-}
-function dessinePendu7()
-{
+break;
+	  case 7:
  // bras droit
 context.beginPath();
 context.moveTo(180,180);
 context.lineTo(240,220);
 context.stroke(); 
-}
-function dessinePendu8()
-{
+break;
+	  case 8:
 // Bras gauche
 context.beginPath();
 context.moveTo(180,180);
 context.lineTo(120,220);
 context.stroke(); 
-}
-function dessinePendu9()
-{
+break;
+	  case 9:
 // jambe droite
 context.beginPath();
 context.moveTo(180,300);
 context.lineTo(240,350);
 context.stroke();
-}
-function dessinePendu10()
-{
+break;
+	  case 10:
 // jambe gauche
 context.beginPath();
 context.moveTo(180,300);
 context.lineTo(120,350);
 context.stroke();
+break;
+}
 }
